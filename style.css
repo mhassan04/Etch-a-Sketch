@@ -1,3 +1,19 @@
+header{
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    background-color: #fff5e1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
+}
+.title h1{
+    text-align: center;
+    height: auto;
+    margin: 0;
+    color: #333;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -52,30 +68,16 @@ body, html {
     transition: background-color 0.2s ease;
 }
 
-header{
-    padding: 20px;
-    margin: 0;
-    text-align: center;
-    font-size: 30px;
-    background-color: #fff5e1;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 100%;
-}
-.title h1{
-    text-align: center;
-    height: auto;
-    margin: 0;
-    color: #333;
-}
+
 /* Adjust button size for smaller screens */
 @media (max-width: 768px) {
     .buttons {
-        font-size: 14px; /* Decrease button size on small screens */
-        padding: 8px 12px; /* Adjust padding for smaller buttons */
+        font-size: 14px; 
+        padding: 8px 12px; 
     }
 
     .grid-square {
-        width: 15px; /* Smaller grid squares for smaller screens */
+        width: 15px; 
         height: 15px;
     }
 }
