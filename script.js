@@ -1,6 +1,9 @@
 const buttonsContainer = document.createElement("div");
 buttonsContainer.classList.add("buttons-container");
 
+let currentColor = 'black';
+
+
 // ** RESIZE GRID BUTTON ** //
 
 const button = document.createElement("button");
@@ -29,8 +32,8 @@ const blackColorButton = document.createElement("button");
 blackColorButton.textContent = "Black";
 blackColorButton.classList.add("buttons");
 blackColorButton.addEventListener("click", function(){
-    
-})
+    currentColor = 'black';
+});
 buttonsContainer.appendChild(blackColorButton);
 
 // ** RGB GRID COLOR BUTTON ** //
@@ -39,7 +42,7 @@ const rainbowButton = document.createElement("button");
 rainbowButton.textContent = "RGB";
 rainbowButton.classList.add("buttons");
 rainbowButton.addEventListener("click", function(){
-    
+    currentColor = 'rainbow';
 })
 buttonsContainer.appendChild(rainbowButton);
 
@@ -49,7 +52,7 @@ const eraserButton = document.createElement("button");
 eraserButton.textContent = "Eraser";
 eraserButton.classList.add("buttons");
 eraserButton.addEventListener("click", function(){
-    
+    currentColor = 'white';
 })
 buttonsContainer.appendChild(eraserButton);
 
@@ -72,6 +75,8 @@ const container = document.createElement("div");
 container.setAttribute("id", "container");
 document.body.appendChild(container);
 
+
+
 function grids(n){
     const containerSize = 640; 
     container.style.width = `${containerSize}px`;
@@ -93,6 +98,11 @@ function clearGrid(){
         container.removeChild(container.firstChild);
     }
 }
+
+
+
+
+
 
 grids(16);
 
