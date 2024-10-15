@@ -5,13 +5,42 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
+    background-color:bisque;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+   
+}
+
+.buttons {
+    padding: 10px 15px;
+    margin: 0;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    
+}
+
+.buttons:hover {
+    background-color: #ddd;
 }
 
 #container{
     display:flex;
     flex-wrap: wrap;
-    width: 320px;
-    height: 320px;
+    width: auto;
+    height: auto;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .grid-square{
@@ -20,4 +49,33 @@ body, html {
     border: 1px solid #ccc;
     background-color: white;
     box-sizing: border-box;
+    transition: background-color 0.2s ease;
+}
+
+header{
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    background-color: #fff5e1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
+}
+.title h1{
+    text-align: center;
+    height: auto;
+    margin: 0;
+    color: #333;
+}
+/* Adjust button size for smaller screens */
+@media (max-width: 768px) {
+    .buttons {
+        font-size: 14px; /* Decrease button size on small screens */
+        padding: 8px 12px; /* Adjust padding for smaller buttons */
+    }
+
+    .grid-square {
+        width: 15px; /* Smaller grid squares for smaller screens */
+        height: 15px;
+    }
 }
