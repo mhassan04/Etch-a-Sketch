@@ -1,6 +1,7 @@
 const buttonsContainer = document.createElement("div");
 buttonsContainer.classList.add("buttons-container");
 
+// ** RESIZE GRID BUTTON ** //
 
 const button = document.createElement("button");
 button.textContent = "Change Grid Size";
@@ -22,6 +23,38 @@ button.addEventListener("click", function(){
 });
 buttonsContainer.appendChild(button);
 
+// ** BLACK GRID COLOR BUTTON ** //
+
+const blackColorButton = document.createElement("button");
+blackColorButton.textContent = "Black";
+blackColorButton.classList.add("buttons");
+blackColorButton.addEventListener("click", function(){
+    
+})
+buttonsContainer.appendChild(blackColorButton);
+
+// ** RGB GRID COLOR BUTTON ** //
+
+const rainbowButton = document.createElement("button");
+rainbowButton.textContent = "RGB";
+rainbowButton.classList.add("buttons");
+rainbowButton.addEventListener("click", function(){
+    
+})
+buttonsContainer.appendChild(rainbowButton);
+
+// ** ERASE GRID BUTTON ** //
+
+const eraserButton = document.createElement("button");
+eraserButton.textContent = "Eraser";
+eraserButton.classList.add("buttons");
+eraserButton.addEventListener("click", function(){
+    
+})
+buttonsContainer.appendChild(eraserButton);
+
+// ** RESET GRID BUTTON ** //
+
 const resetButton = document.createElement("button");
 resetButton.textContent = "Reset";
 resetButton.classList.add("buttons")
@@ -31,13 +64,7 @@ resetButton.addEventListener("click", function(){
 })
 buttonsContainer.appendChild(resetButton);
 
-const eraserButton = document.createElement("button");
-eraserButton.textContent = "Eraser";
-eraserButton.classList.add("buttons");
-eraserButton.addEventListener("click", function(){
-    
-})
-buttonsContainer.appendChild(eraserButton);
+
 
 document.body.appendChild(buttonsContainer);
 
@@ -60,6 +87,7 @@ function grids(n){
     }
 }
 
+// ** Clears grid and sets it back to default ** //
 function clearGrid(){
     while(container.firstChild){
         container.removeChild(container.firstChild);
