@@ -67,14 +67,11 @@ resetButton.addEventListener("click", function(){
 })
 buttonsContainer.appendChild(resetButton);
 
-
-
 document.body.appendChild(buttonsContainer);
 
 const container = document.createElement("div");
 container.setAttribute("id", "container");
 document.body.appendChild(container);
-
 
 
 function grids(n){
@@ -88,21 +85,31 @@ function grids(n){
         gridSquare.classList.add("grid-square");
         gridSquare.style.width = `${gridSquareSize}px`;
         gridSquare.style.height = `${gridSquareSize}px`;
+        gridSquare.addEventListener("mouseover", function(){
+            if(currentColor == 'black'){
+                gridSquare.style.backgroundColor = 'black';
+            }
+            else if(currentColor == 'rainbow'){
+                gridSquare.style.backgroundColor = getRandomColor();
+            }
+            else if(currentColor == 'white'){
+                gridSquare.style.backgroundColor = 'white';
+            }
+        })
         container.appendChild(gridSquare);
     }
 }
 
-// ** Clears grid and sets it back to default ** //
 function clearGrid(){
     while(container.firstChild){
         container.removeChild(container.firstChild);
     }
 }
 
-
-
-
-
+function getRandomColor() {
+    const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+    return `#${randomColor}`;
+}
 
 grids(16);
 

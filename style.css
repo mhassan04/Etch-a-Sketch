@@ -68,9 +68,6 @@ body, html {
     transition: background-color 0.2s ease;
 }
 
-.grid-square:hover{
-    background-color: var(--hover-color);
-}
 
 /* Adjust button size for smaller screens */
 @media (max-width: 768px) {
