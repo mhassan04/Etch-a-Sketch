@@ -24,10 +24,10 @@ This project is a simple **grid drawing app** where users can create grids of cu
 
 1. Clone the repository:
    ```bash
-   git clone <git@github.com:mhassan04/Etch-a-Sketch.git>
+   git clone git@github.com:mhassan04/Etch-a-Sketch.git
 2. Navigate to the project folder:
    ```bash
-   cd <"Etch-a-Sketch">
+   cd "Etch-a-Sketch"
 3. Open the index.html file in your browser to start using it
 
 ## Technologies Used
