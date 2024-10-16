@@ -28,7 +28,7 @@ This project is a simple **grid drawing app** where users can create grids of cu
 2. Navigate to the project folder:
    ```bash
    cd "Etch-a-Sketch"
-3. Open the `index.html` file in your browser to start using it
+3. Open the `index.html` file in your browser to start using the app
 
 ## Technologies Used
 
