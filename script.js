@@ -1,6 +1,5 @@
 const buttonsContainer = document.createElement("div");
 buttonsContainer.classList.add("buttons-container");
-
 let currentColor = 'black';
 
 
@@ -72,6 +71,24 @@ document.body.appendChild(buttonsContainer);
 const container = document.createElement("div");
 container.setAttribute("id", "container");
 document.body.appendChild(container);
+
+
+// ** GitHub Logo Section ** //
+const footer = document.createElement("div");
+footer.classList.add("footer");
+
+const githubLink = document.createElement("a");
+githubLink.href = "https://github.com/mhassan04/Etch-a-Sketch"; 
+githubLink.target = "_blank"; 
+
+const githubLogo = document.createElement("img");
+githubLogo.src = "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg";
+githubLogo.alt = "GitHub Logo";
+githubLogo.classList.add("github-logo");
+
+githubLink.appendChild(githubLogo);
+footer.appendChild(githubLink);
+document.body.appendChild(footer);
 
 
 function grids(n){
