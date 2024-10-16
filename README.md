@@ -6,7 +6,7 @@ This project is a simple **grid drawing app** where users can create grids of cu
 
 ## Preview:
 
-![Etch-a-Sketch](images/preview.png)
+![Etch-a-Sketch](preview.png)
 
 ## Features
 
