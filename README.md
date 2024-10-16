@@ -4,7 +4,7 @@
 
 This project is a simple **grid drawing app** where users can create grids of customizable sizes and interact with the grid by changing the colors of the grid squares. The app includes different modes, such as **black coloring**, **random RGB coloring**, and **eraser functionality**.
 
-## Preview: Demo https://mhassan04.github.io/Etch-a-Sketch/
+## Preview: Live Demo Here > https://mhassan04.github.io/Etch-a-Sketch/
 
 ![Etch-a-Sketch](preview.png)
 
